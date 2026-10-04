@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Brasil: acesse ou cadastre-se</title>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVEGAÇÃO / CABEÇALHO SUPERIOR -->
+    <header class="public-header">
+        <nav class="nav-container">
+            <!-- Logo Oficial -->
+            <a href="https://br.linkedin.com/" class="brand-logo">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <!-- Atalhos de Recursos e Botões de Acesso -->
+            <div class="nav-actions">
+                <ul class="nav-items">
+                    <li><a href="#"><i class="fa-solid fa-compass"></i> <span>Descobrir</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-group"></i> <span>Pessoas</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-laptop-code"></i> <span>Learning</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-briefcase"></i> <span>Vagas</span></a></li>
+                </ul>
+
+                <div class="auth-buttons">
+                    <a href="#" class="btn-secondary">Cadastre-se agora</a>
+                    <a href="#" class="btn-primary">Entrar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SEÇÃO PRINCIPAL (HERO SECTION) -->
+    <main class="hero-section">
+        <div class="hero-container">
+            
+            <!-- Formulário de Entrada/Login -->
+            <div class="hero-form-box">
+                <h1>Boas-vindas à sua comunidade profissional</h1>
+                
+                <form class="login-form">
+                    <div class="input-group">
+                        <label for="email-or-phone">E-mail ou telefone</label>
+                        <input type="text" id="email-or-phone" name="email">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
+
+                    <button type="submit" class="btn-submit">Entrar</button>
+                </form>
+
+                <div class="divider">
+                    <span>ou</span>
+                </div>
+
+                <!-- Botão de Login Social -->
+                <button class="btn-google">
+                    <i class="fa-brands fa-google"></i> Entrar com o Google
+                </button>
+            </div>
+
+            <!-- Imagem Ilustrativa Direita -->
+            <div class="hero-image">
+                <img src="https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85kt1236" alt="Pessoa trabalhando no notebook">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- SEÇÃO DE EXPLORAÇÃO / BUSCA DE VAGAS -->
+    <section class="explore-section">
+        <div class="explore-container">
+            <h2>Encontre a vaga ou o curso certo para você</h2>
+            <div class="pills-container">
+                <button class="pill-btn">Engenharia</button>
+                <button class="pill-btn">Desenvolvimento Web</button>
+                <button class="pill-btn">Atendimento ao Cliente</button>
+                <button class="pill-btn">Recursos Humanos</button>
+                <button class="pill-btn">Tecnologia da Informação</button>
+                <button class="pill-btn">Marketing</button>
+                <button class="pill-btn show-more">Exibir mais <i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ PÚBLICO -->
+    <footer class="public-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn © 2026</span>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Acessibilidade</a></li>
+                <li><a href="#">Contrato do Usuário</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Diretrizes da Comunidade</a></li>
+                <li><a href="#">Política de Cookies</a></li>
+                <li><a href="#">Linguagem</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
