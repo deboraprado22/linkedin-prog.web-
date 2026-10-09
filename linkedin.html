@@ -7,8 +7,10 @@
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo-linkedin.avif" type="image/avif">
 </head>
 <body>
+    
 
     <!-- NAVEGAÇÃO / CABEÇALHO SUPERIOR -->
     <header class="public-header">
@@ -19,76 +21,117 @@
                 <span>LinkedIn</span>
             </a>
 
-            <!-- Atalhos de Recursos e Botões de Acesso -->
+            <!-- Ícones do Menu + Divisor + Botões -->
             <div class="nav-actions">
                 <ul class="nav-items">
-                    <li><a href="#"><i class="fa-solid fa-compass"></i> <span>Descobrir</span></a></li>
-                    <li><a href="#"><i class="fa-solid fa-user-group"></i> <span>Pessoas</span></a></li>
-                    <li><a href="#"><i class="fa-solid fa-laptop-code"></i> <span>Learning</span></a></li>
-                    <li><a href="#"><i class="fa-solid fa-briefcase"></i> <span>Vagas</span></a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-rocket"></i>
+                            <span>Assuntos em alta</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Pessoas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <span>Learning</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Vagas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                            <span>Jogos</span>
+                        </a>
+                    </li>
                 </ul>
 
+                <!-- Linha Separadora Vertical -->
+                <div class="nav-divider"></div>
+
+                <!-- Botões de Acesso -->
                 <div class="auth-buttons">
-                    <a href="#" class="btn-secondary">Cadastre-se agora</a>
-                    <a href="#" class="btn-primary">Entrar</a>
+                    <a href="#" class="btn-login-outline">Entrar</a>
+                    <a href="#" class="btn-signup-filled">Cadastre-se agora</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- SEÇÃO PRINCIPAL (HERO SECTION) -->
-    <main class="hero-section">
+    <main class="secao-principal">
         <div class="hero-container">
             
-            <!-- Formulário de Entrada/Login -->
-            <div class="hero-form-box">
-                <h1>Boas-vindas à sua comunidade profissional</h1>
-                
-                <form class="login-form">
-                    <div class="input-group">
-                        <label for="email-or-phone">E-mail ou telefone</label>
-                        <input type="text" id="email-or-phone" name="email">
-                    </div>
+            <!-- Coluna da Esquerda: Título + Botões de Autenticação -->
+            <div class="hero-content-left">
+                <h1 class="hero-title">
+                    Cadastre-se agora e descubra a sua próxima vaga e oportunidades profissionais
+                </h1>
 
-                    <div class="input-group">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-
-                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
-
-                    <button type="submit" class="btn-submit">Entrar</button>
-                </form>
-
-                <div class="divider">
-                    <span>ou</span>
-                </div>
-
-                <!-- Botão de Login Social -->
+                <!-- Botão Continuar com o Google -->
                 <button class="btn-google">
-                    <i class="fa-brands fa-google"></i> Entrar com o Google
+                    <span class="google-icon-box">
+                        <svg viewBox="0 0 24 24" class="google-svg">
+                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z"/>
+                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                        </svg>
+                    </span>
+                    <span class="btn-text">Continuar com o Google</span>
                 </button>
+
+                <!-- Botão Entrar com e-mail -->
+                <button class="btn-email">
+                    Entrar com e-mail
+                </button>
+
+                <!-- Termos e Políticas -->
+                <p class="terms-text">
+                    Ao clicar em Continuar para se cadastrar ou entrar, você aceita o 
+                    <a href="#">Contrato do Usuário</a>, a 
+                    <a href="#">Política de Privacidade</a> e a 
+                    <a href="#">Política de Cookies</a> do LinkedIn.
+                </p>
+
+                <!-- Chamada para Cadastro -->
+                <p class="signup-text">
+                    Ainda não faz parte do LinkedIn? <a href="#">Cadastre-se agora</a>
+                </p>
             </div>
 
             <!-- Imagem Ilustrativa Direita -->
             <div class="hero-image">
-                <img src="https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85kt1236" alt="Pessoa trabalhando no notebook">
+                <img src="imagem.png" alt="Ilustração LinkedIn">
             </div>
-
         </div>
     </main>
 
     <!-- SEÇÃO DE EXPLORAÇÃO / BUSCA DE VAGAS -->
     <section class="explore-section">
         <div class="explore-container">
-            <h2>Encontre a vaga ou o curso certo para você</h2>
+            <h2>Encontre o emprego ou estágio certo para você</h2>
             <div class="pills-container">
                 <button class="pill-btn">Engenharia</button>
-                <button class="pill-btn">Desenvolvimento Web</button>
-                <button class="pill-btn">Atendimento ao Cliente</button>
-                <button class="pill-btn">Recursos Humanos</button>
+                <button class="pill-btn">Desenvolvimento de negócios</button>
+                <button class="pill-btn">Financeiro</button>
+                <button class="pill-btn">Auxiliar administrativo</button>
+                <button class="pill-btn">Representante de vendas no varejo</button>
+                <button class="pill-btn">Atendimento ao cliente</button>
+                <button class="pill-btn">Operações</button>
                 <button class="pill-btn">Tecnologia da Informação</button>
                 <button class="pill-btn">Marketing</button>
+                <button class="pill-btn">Recursos humanos</button>
                 <button class="pill-btn show-more">Exibir mais <i class="fa-solid fa-chevron-down"></i></button>
             </div>
         </div>
